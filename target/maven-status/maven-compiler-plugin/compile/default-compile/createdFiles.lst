@@ -1,0 +1,6 @@
+com\sino\model\HostModel.class
+com\sino\model\MonitorDataVO.class
+com\sino\CollectNmonFile\ExcelUtil.class
+com\sino\CollectNmonFile\CollectionMain.class
+com\sino\CollectNmonFile\RemoteUtils.class
+com\sino\model\NmonDataModel.class

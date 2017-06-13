@@ -1,0 +1,38 @@
+ZZZZ,T0001,20:26:48,05-JUN-2017
+CPU001,T0001,1.6,5.6,2.4,90.5
+CPU002,T0001,2.3,5.3,6.1,86.4
+CPU_ALL,T0001,2.0,5.1,3.9,89.1,,2
+MEM,T0001,1824.9,-0.0,-0.0,2048.0,708.7,-0.0,-0.0,2048.0,-0.0,304.7,613.2,-1.0,1.2,0.0,251.9
+VM,Paging and Virtual Memory,nr_dirty,nr_writeback,nr_unstable,nr_page_table_pages,nr_mapped,nr_slab,pgpgin,pgpgout,pswpin,pswpout,pgfree,pgactivate,pgdeactivate,pgfault,pgmajfault,pginodesteal,slabs_scanned,kswapd_steal,kswapd_inodesteal,pageoutrun,allocstall,pgrotated,pgalloc_high,pgalloc_normal,pgalloc_dma,pgrefill_high,pgrefill_normal,pgrefill_dma,pgsteal_high,pgsteal_normal,pgsteal_dma,pgscan_kswapd_high,pgscan_kswapd_normal,pgscan_kswapd_dma,pgscan_direct_high,pgscan_direct_normal,pgscan_direct_dma
+VM,T0001,65,0,0,3944,10819,-1,8,16,0,0,7251,109,0,23110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PROC,T0001,1,0,0.0,-1.0,-1.0,-1.0,0.0,-1.0,-1.0,-1.0
+NET,T0001,0.8,0.0,0.0,0.0,0.0,0.0,0.4,0.0,0.0,0.0,0.0,0.0,
+NETPACKET,T0001,6.3,0.0,0.0,0.0,0.0,0.0,4.4,0.0,0.0,0.0,0.0,0.0,
+JFSFILE,T0001,94.0,0.0,1.9,94.0,-nan,-nan,42.7,0.0
+DISKBUSY,T0001,39.2,0.0,39.2,39.8,0.0,0.0
+DISKREAD,T0001,5.1,0.0,5.1,0.0,0.0,5.1
+DISKWRITE,T0001,10.1,0.0,10.1,10.1,0.0,0.0
+DISKXFER,T0001,3.8,0.0,3.8,2.5,0.0,1.3
+DISKBSIZE,T0001,4.0,0.0,4.0,4.0,0.0,4.0
+
+格式：
+CPU001,CPU 1 localhost,User%,Sys%,Wait%,Idle%
+CPU002,CPU 2 localhost,User%,Sys%,Wait%,Idle%
+CPU_ALL,CPU Total localhost,User%,Sys%,Wait%,Idle%,Busy,CPUs
+MEM,Memory MB localhost,memtotal,hightotal,lowtotal,swaptotal,memfree,highfree,lowfree,swapfree,memshared,cached,active,bigfree,buffers,swapcached,inactive
+PROC,Processes localhost,Runnable,Blocked,pswitch,syscall,read,write,fork,exec,sem,msg
+NET,Network I/O localhost,eno16777736-read-KB/s,lo-read-KB/s,virbr0-nic-read-KB/s,virbr0-read-KB/s,bridge1-read-KB/s,bridge0-read-KB/s,eno16777736-write-KB/s,lo-write-KB/s,virbr0-nic-write-KB/s,virbr0-write-KB/s,bridge1-write-KB/s,bridge0-write-KB/s,
+NETPACKET,Network Packets localhost,eno16777736-read/s,lo-read/s,virbr0-nic-read/s,virbr0-read/s,bridge1-read/s,bridge0-read/s,eno16777736-write/s,lo-write/s,virbr0-nic-write/s,virbr0-write/s,bridge1-write/s,bridge0-write/s,
+DISKBUSY,Disk %Busy localhost,sda,sda1,sda2,dm-0,dm-1,dm-2
+DISKREAD,Disk Read KB/s localhost,sda,sda1,sda2,dm-0,dm-1,dm-2
+DISKWRITE,Disk Write KB/s localhost,sda,sda1,sda2,dm-0,dm-1,dm-2
+DISKXFER,Disk transfers per second localhost,sda,sda1,sda2,dm-0,dm-1,dm-2
+DISKBSIZE,Disk Block Size localhost,sda,sda1,sda2,dm-0,dm-1,dm-2
+DGBUSY,Disk Group Busy localhost
+DGREAD,Disk Group Read KB/s localhost
+DGWRITE,Disk Group Write KB/s localhost
+DGSIZE,Disk Group Block Size KB localhost
+DGXFER,Disk Group Transfers/s localhost
+JFSFILE,JFS Filespace %Used localhost,/,/dev,/run,/,/dev/mqueue,/dev/hugepages,/boot,/run/user/0
+
+eg:
